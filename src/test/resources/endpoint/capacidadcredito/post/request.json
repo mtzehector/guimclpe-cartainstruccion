@@ -1,0 +1,19 @@
+{
+	"prestamo":{
+            "solicitud":"162",
+	    "monto":"12000",
+	    "impDescuentoNomina":"120",
+	    "impTotalPagar":"6000",
+	    "fecPrimerDescuento":"",
+	    "numPeriodoNomina":"22",
+	    "refCuentaClabe":"123456789012345678",
+	    "condicionOferta":"5",
+	    "promotor":"2",
+	    "simulacion":"1",
+	    "credito":"1"
+	},
+	"cartaInstruccion":{
+		"refSello":"selloDigitalGoesHere",
+		"refDocumento":"InsertDocumentTest"
+	}
+}
