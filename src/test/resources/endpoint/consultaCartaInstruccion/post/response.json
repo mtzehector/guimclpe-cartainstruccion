@@ -1,0 +1,85 @@
+{
+    "claveSolicitud": "490",
+    "solicitud": {
+        "id": 490,
+        "origenSolictud": 1,
+        "estadoSolicitud": 6,
+        "numFolioSolicitud": "11190500043-4",
+        "refTrabajador": "pensionado",
+        "fecVigenciaFolio": null,
+        "consecutivo": null,
+        "numAnio": null,
+        "altaRegistro": "20/11/2019 09:44:12",
+        "curp": "SAVA790909HDFMRN29",
+        "nss": "12345678",
+        "delegacion": "05",
+        "subDelegacion": "12",
+        "grupoFamiliar": "01",
+        "entidadFederativa": 5
+    },
+    "prestamo": {
+        "id": 218,
+        "monto": 12345.0,
+        "periodoNomina": null,
+        "primerDescuento": "20/11/2019 12:00:00",
+        "solicitud": 490,
+        "altaRegistro": "20/11/2019 09:44:13",
+        "idOferta": 49,
+        "tipoSimulacion": null,
+        "impMontoSol": null,
+        "impTotalPagar": null,
+        "tipoCredito": null,
+        "refCuentaClabe": null,
+        "numPeriodoNomina": null,
+        "impDescNomina": null,
+        "promotor": 2,
+        "oferta": {
+            "id": null,
+            "entidadFinanciera": {
+                "id": 41,
+                "nombreComercial": "Total Credit",
+                "razonSocial": "Crego, S.A. DE C.V., SOFOM, E.N.R.",
+                "numTelefono": "(81) 8115-3000",
+                "paginaWeb": "www.totalcredit.mx"
+            },
+            "monto": null,
+            "cat": 49.89,
+            "descuentoMensual": null,
+            "plazo": {
+                "id": 10,
+                "numPlazo": 54,
+                "descripcion": "54 meses"
+            },
+            "importeTotal": null,
+            "tasaAnual": 45.0,
+            "beneficios": []
+        }
+    },
+    "pensionado": {
+        "nombre": "Alejandra",
+        "primerApellido": "Torres",
+        "segundoApellido": "Salas",
+        "correoElectronico": null,
+        "telefono": null,
+        "sexo": null,
+        "edad": null,
+        "nss": "31238798753",
+        "grupoFamiliar": null,
+        "curp": "BADD110313HCMLNS09",
+        "delegacion": null,
+        "subDelegacion": null,
+        "entidadFederativa": null,
+        "cuentaClabe": null,
+        "fechaNacimiento": null
+    },
+    "personaEf": {
+        "nombre": null,
+        "primerApellido": null,
+        "segundoApellido": null,
+        "correoElectronico": null,
+        "telefono": null,
+        "sexo": null,
+        "edad": null,
+        "id": 2
+    }
+}

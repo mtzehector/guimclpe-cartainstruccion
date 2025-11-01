@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="CartaRecibo" language="groovy" pageWidth="612" pageHeight="792" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="d966afdd-3e11-401e-8a34-a1729fe1d8c2">
+	<property name="ireport.zoom" value="1.2100000000000009"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="215"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="periodo" class="java.lang.String"/>
+	<field name="proveedor" class="java.lang.String"/>
+	<field name="rfc" class="java.lang.String"/>
+	<field name="monto" class="java.lang.String"/>
+	<field name="montoLetra" class="java.lang.String"/>
+	<field name="mes" class="java.lang.String"/>
+	<field name="anio" class="java.lang.String"/>
+	<field name="primas" class="java.lang.String"/>
+	<field name="tasa" class="java.lang.String"/>
+	<field name="iva" class="java.lang.String"/>
+	<field name="demasia" class="java.lang.String"/>
+	<field name="neto" class="java.lang.String"/>
+	<field name="firma" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="143" splitType="Stretch">
+			<textField isBlankWhenNull="true">
+				<reportElement x="405" y="0" width="167" height="20" uuid="2268df69-47d7-4093-8224-33cb9d74385d"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["No. "+ $F{periodo}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="195" y="111" width="183" height="32" isRemoveLineWhenBlank="true" uuid="45849d2c-8d5f-4408-8e2a-18a29a560c6d"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[CARTA RECIBO]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="405" y="20" width="167" height="20" uuid="f8e0ec94-a07a-4b4e-a02d-46c4754536f9"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Proveedor: "+$F{proveedor}]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="74" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="446" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="100" height="20" uuid="40f00d80-c722-4fe3-8be2-00f8e8e7ef07"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Presente]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="366" y="20" width="206" height="20" uuid="c4c33ea2-b825-492a-8d14-a82f278d144b"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["R.F.C." + $F{rfc}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="40" width="572" height="91" uuid="c559cc4f-8890-4219-bfc8-d87223d8bb71"/>
+				<textElement>
+					<font fontName="Arial" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Recibimos del INSTITUTO MEXICANO DEL SEGURO SOCIAL la cantidad de " + $F{monto} +"("+ $F{montoLetra} + ").  La cual, se integra por el importe de las retenciones efectuadas a los pensionados derivados de los préstamos otorgados por mi representada, correspondiente al mes de "+ $F{mes} +" de "+$F{anio} +", así como por los gastos de administración, como se muestra a continuación:"]]></textFieldExpression>
+			</textField>
+			<rectangle>
+				<reportElement x="53" y="131" width="325" height="20" uuid="5a1b25f1-c079-4d2a-9274-0bae904f8f81"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="378" y="131" width="122" height="20" uuid="67c34dec-90d1-44c8-be4c-1286722ef35d"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="53" y="151" width="325" height="20" uuid="9540af62-1ea9-400f-a736-a95339c9605b"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="378" y="151" width="122" height="20" uuid="ca8a3875-3164-47b9-9e77-f51dc584dc5a"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="53" y="171" width="325" height="20" uuid="b094e3a8-862b-4131-aa01-2f8584f3fa90"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="378" y="171" width="122" height="20" uuid="a0237f40-fbc5-4ee5-aad6-cf774ae4f287"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="378" y="191" width="122" height="20" uuid="06a29da4-a11a-4aaf-996c-3dc327d63457"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="53" y="191" width="325" height="20" uuid="ba284e7a-0d1b-4ed4-97db-7e9aee43c75d"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="378" y="211" width="122" height="20" uuid="c365a3b0-3413-4bb3-9be5-c333001f3d99"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="53" y="211" width="325" height="20" uuid="78298973-111c-42be-858c-ac3daf03be69"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="378" y="231" width="122" height="20" uuid="cde04dc4-b484-4bcc-9f8b-89981349aceb"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="53" y="231" width="325" height="20" uuid="1cd4b3f7-2ec1-42ee-84ad-7a0b7e9974db"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="65" y="131" width="313" height="20" uuid="56e119cb-caf8-4ecd-aea0-f18599d8a15e"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="12"/>
+				</textElement>
+				<text><![CDATA[a) Pago total de primas]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="53" y="151" width="313" height="20" uuid="54f8abf0-a345-4cd8-8fbd-605a7401a543"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" size="12"/>
+				</textElement>
+				<text><![CDATA[Menos]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="65" y="171" width="313" height="20" uuid="d468d34c-0cfc-4ea5-b864-e7b7e0163021"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="12"/>
+				</textElement>
+				<text><![CDATA[b) Tasa por costos de Administración (0.5%)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="65" y="191" width="313" height="20" uuid="83c44aa1-04bd-464f-84c3-df8f69c1a459"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="12"/>
+				</textElement>
+				<text><![CDATA[c) I.V.A. (b*.16%)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="65" y="211" width="313" height="20" uuid="d2616486-6d53-42aa-b99f-e2fc3ce14e72"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="12"/>
+				</textElement>
+				<text><![CDATA[d) Importe pagado en demasía por defunciones]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="66" y="231" width="313" height="20" uuid="3a68bfe4-3fc2-4f5a-a3ac-397bd135c523"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="12"/>
+				</textElement>
+				<text><![CDATA[Neto a pagar (a-b-c-d) ($ importe).]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="385" y="131" width="113" height="20" uuid="3e8499ee-5479-4909-95a8-60f09f567b78"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{primas}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="385" y="171" width="113" height="20" uuid="7ee178e0-f35f-451d-b095-4ba6c50f53f8"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tasa}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="385" y="191" width="113" height="20" uuid="0f73c7a8-f649-4ca6-8bce-98a0e62bd92b"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{iva}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="385" y="211" width="113" height="20" uuid="5f87899c-6eb9-4293-86db-8d3a35d4b9f5"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{demasia}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="385" y="231" width="113" height="20" uuid="55e7bf55-a0cf-425f-8e93-606dffb941d8"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{neto}]]></textFieldExpression>
+			</textField>
+			<rectangle>
+				<reportElement x="38" y="329" width="497" height="20" forecolor="#000000" backcolor="#CCCCCC" uuid="0a0fd02d-805d-40af-8200-e40bbcc9d140"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="38" y="349" width="497" height="71" uuid="c395dc2f-40c7-41fe-8e38-17e65a644855"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="53" y="329" width="425" height="20" uuid="a42d5d8a-fc97-4979-9980-c8f77fd9e0d4"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Firma Digital Entidad Financiera]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="50" y="349" width="472" height="71" uuid="9b193901-7790-441c-bba1-ffce0bea0d1e"/>
+				<textElement>
+					<font fontName="Arial"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{firma}]]></textFieldExpression>
+			</textField>
+		</band>
+	</columnHeader>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+</jasperReport>
